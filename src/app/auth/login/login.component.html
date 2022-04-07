@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.component.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Login</h1>
+      <form method="post" >
+        <div class="txt_field">
+          <input type="text" id="email" required>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" id="password" required>
+          <span></span>   
+          <label>Password</label>
+        </div>
+  
+        <input type="submit" value="Login" id="submitButton">
+        <div class="signup_link">
+          Not a member? <a routerLink="/signup" id="userSignupLink">Signup</a>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>

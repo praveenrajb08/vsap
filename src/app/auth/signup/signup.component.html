@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Signup</title>
+    <!-- <link rel="stylesheet" href="./signup.component.css"> -->
+  </head>
+  <body>
+    <div class="center">
+      <h1>Signup</h1>
+      <form method="post" id="signup">
+        <div class="txt_field">
+          <input id="email" type="text" required>
+          <label>Enter Email</label>
+        </div>
+        <div class="txt_field">
+          <input id="password" type="password" required>
+          <label>Enter Password</label>
+        </div>
+        <div class="txt_field">
+          <input id="mobilenumber" type="tel" required>
+          <label>Enter Mobile Number</label>
+        </div>
+        <div class="txt_field">
+          <select id="Userrole"  >
+                    <option value="Userrole">Select Userrole</option>
+                    <option value="Super Admin">Super Admin</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Customer">Customer</option>       
+            </select>       
+        </div>
+        <div class="txt_field">          
+            <input
+              type="text" id="username"
+              name="username" required           
+            />
+            <label>Username</label>
+          </div>        
+          <div class="txt_field">          
+            <input
+              type="text" id="age"
+              name="Age" required           
+            />
+            <label>Age</label>
+          </div>        
+        <input type="submit" value="Signup">
+        <div class="signup_link">
+          Already a member? <a routerLink="/">Login</a>
+
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
